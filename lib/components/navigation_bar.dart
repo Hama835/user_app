@@ -3,7 +3,6 @@ import 'package:user_app/screens/order_screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'package:user_app/screens/profile_screen.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:user_app/screens/home_screen.dart';
 import 'package:user_app/screens/request_screen.dart';
 
 class NavBar extends StatelessWidget {
@@ -27,21 +26,21 @@ class NavBar extends StatelessWidget {
         // ignore: unnecessary_parenthesis
         title: ('Home'),
         activeColor: CupertinoColors.black,
-        inactiveColor: CupertinoColors.systemGrey,
+        inactiveColor: CupertinoColors.white,
       ),
       PersistentBottomNavBarItem(
         icon: Icon(Icons.reorder),
         // ignore: unnecessary_parenthesis
         title: ('orders'),
         activeColor: CupertinoColors.black,
-        inactiveColor: CupertinoColors.systemGrey,
+        inactiveColor: CupertinoColors.white,
       ),
       PersistentBottomNavBarItem(
         icon: Icon(CupertinoIcons.person_solid),
         // ignore: unnecessary_parenthesis
         title: ('profile'),
         activeColor: CupertinoColors.black,
-        inactiveColor: CupertinoColors.systemGrey,
+        inactiveColor: CupertinoColors.white,
       ),
 
     ];
@@ -54,7 +53,7 @@ class NavBar extends StatelessWidget {
       screens: _buildScreens(),
       items: _navBarsItems(),
       confineInSafeArea: true,
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.blue,
       handleAndroidBackButtonPress: true,
       // katak keybord dabetawa.
       resizeToAvoidBottomInset: true,

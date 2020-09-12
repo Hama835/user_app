@@ -12,16 +12,6 @@ class GetData extends ChangeNotifier {
   String apiUrl = 'https://eshukar.herokuapp.com/api/v1';
 
   List services;
-
-  Future<dynamic> getCarts() async {
-    final response = await http.get(
-      Uri.encodeFull('http://10.0.2.2:8000/api/v1/carts'),
-      headers: {'content-typw' : 'aplication/json'},
-    );
-    var extractData = json.decode(response.body);
-    services = extractData['carts'];
-    notifyListeners();
-  }
   Future<updateUser> updateCus({String name, String address}) async{
     final response = await http.put(apiUrl + '/customers', body: {
       "name": name,

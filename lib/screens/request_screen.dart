@@ -16,6 +16,7 @@ class RequistScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+       // backgroundColor: Colors.blue,
         body: Padding(
           padding: EdgeInsets.symmetric(
             vertical: 16,
@@ -95,6 +96,7 @@ class RequistScreen extends StatelessWidget {
                             height: 33,
                           ),
                           RaisedButton(
+                            color: Colors.blue,
                             elevation: 12,
                             onPressed: () {
                               icon = true;
@@ -109,6 +111,10 @@ class RequistScreen extends StatelessWidget {
                                 ? Icon(Icons.check)
                                 : Text(
                                     'Requist',
+                              style: kTextStyle.copyWith(
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
                                   ),
                           ),
                         ],

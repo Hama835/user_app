@@ -42,7 +42,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               CircleAvatar(
                 radius: 68,
-                backgroundColor: Colors.black,
+                backgroundColor: Colors.blue,
                 child: CircleAvatar(
                   radius: 66,
                   backgroundImage: AssetImage('assets/uu.jpg'),

@@ -18,9 +18,9 @@ class EditProfile extends StatelessWidget {
               name: addressController.text,
               address: addressController.text,
             );
-            Navigator.of(context);
+            Navigator.pop(context);
           },
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.blue,
           child: Icon(
             Icons.check,
             color: Colors.white,
@@ -80,7 +80,8 @@ class EditProfile extends StatelessWidget {
                 ToggleSwitch(
                   minHeight: 44,
                   minWidth: 66,
-                  activeBgColor: Colors.black,
+                  activeBgColor: Colors.blue,
+                  inactiveBgColor: Colors.blueGrey,
                   initialLabelIndex: 0,
                   labels: ['kurdish', 'english', 'arabic'],
                   onToggle: (index) {
@@ -91,12 +92,13 @@ class EditProfile extends StatelessWidget {
                   height: 55,
                 ),
                 RaisedButton(
+                  color: Colors.blue,
                   elevation: 12,
                   onPressed: () {},
                   child: Text(
                     'logout',
                     style: kBodyTextStyle.copyWith(
-                      color: Colors.black,
+                      color: Colors.white,
                     ),
                   ),
                 ),

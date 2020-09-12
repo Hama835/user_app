@@ -10,12 +10,12 @@ class OrderScreen extends StatelessWidget {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.blue,
             shadowColor: Colors.blueGrey,
             elevation: 11,
             bottom: TabBar(
-              labelColor: Colors.black,
-              indicatorColor: Colors.black,
+              labelColor: Colors.white,
+              indicatorColor: Colors.white,
               tabs: [
                 Tab(icon: Icon(Icons.access_time),text: 'current',),
                 Tab(icon: Icon(Icons.history),text: 'history',),
@@ -23,7 +23,9 @@ class OrderScreen extends StatelessWidget {
             ),
             title: Text(
                 'Orders',
-              style: kTextStyle,
+              style: kTextStyle.copyWith(
+                color: Colors.white
+              ),
             ),
           ),
           body: Padding(
