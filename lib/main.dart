@@ -1,21 +1,17 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'components/navigation_bar.dart';
-import 'package:provider/provider.dart';
-import 'package:user_app/data/provider.dart';
+import 'package:user_application/screens/category_screen.dart';
+import 'package:user_application/screens/service_screen.dart';
 
-void main() => runApp(UserApp());
+void main() => runApp(MyApp());
 
-class UserApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      builder: (context) => GetData(),
-      child: MaterialApp(
-        theme: ThemeData.light().copyWith(
-          scaffoldBackgroundColor: Color(0xffFAFDFF),
-        ),
-        home:NavBar(),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Service',
+      home: CategoryScreen()
     );
   }
 }
