@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:user_app/constants.dart';
-import 'package:user_app/components/flutter_map.dart';
 import 'package:provider/provider.dart';
-import 'package:user_app/data/provider.dart';
+import 'package:user_application/components/flutter_map.dart';
+import 'package:user_application/data/provider.dart';
+
+import '../constants.dart';
 
 class RequistScreen extends StatelessWidget {
   final TextEditingController addressController = TextEditingController();

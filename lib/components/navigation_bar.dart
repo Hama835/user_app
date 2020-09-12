@@ -1,14 +1,14 @@
-import 'package:flutter/material.dart';
-import 'package:user_app/screens/order_screen.dart';
-import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
-import 'package:user_app/screens/profile_screen.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:user_app/screens/request_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
+import 'package:user_application/screens/order_screen.dart';
+import 'package:user_application/screens/profile_screen.dart';
+import 'package:user_application/screens/request_screen.dart';
 
 class NavBar extends StatelessWidget {
   List<Widget> _buildScreens() {
     return [
-     RequistScreen(),
+      RequistScreen(),
       OrderScreen(),
       ProfileScreen(),
 

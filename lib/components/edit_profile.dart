@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:user_app/constants.dart';
 import 'package:provider/provider.dart';
-import 'package:user_app/data/provider.dart';
 import 'package:toggle_switch/toggle_switch.dart';
+import 'package:user_application/data/provider.dart';
+
+import '../constants.dart';
 
 class EditProfile extends StatelessWidget {
   final TextEditingController addressController = TextEditingController();

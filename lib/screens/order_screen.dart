@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:user_app/constants.dart';
-import 'package:user_app/data/provider.dart';
-import 'package:user_app/data/getprogressrequests.dart';
+
+import '../constants.dart';
+
 class OrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

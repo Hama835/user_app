@@ -4,6 +4,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+const TextStyle serviceItemTitle = TextStyle(
+  fontSize: 24,
+  fontWeight: FontWeight.w700,
+);
+
+const TextStyle serviceItemType =
+    TextStyle(fontSize: 16, fontWeight: FontWeight.w500);
+
 const kTextStyle = TextStyle(
   fontSize: 30,
   color: CupertinoColors.black,
