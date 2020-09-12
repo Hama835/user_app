@@ -199,7 +199,7 @@ class _LoginPageState extends State<LoginPage> {
     //Navigator.push(context, MaterialPageRoute(builder: (context) => RequestPage(),),);
   }
 
-  Function _login() {}
+  void _login() {}
 }
 
 
