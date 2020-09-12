@@ -1,9 +1,9 @@
 import 'package:app_user/components/custom_text_field.dart';
-import 'package:app_user/components/navigate_next.dart';
 import 'package:app_user/screens/sigup_page.dart';
 import 'package:app_user/utilities/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:app_user/components/top_navigation.dart';
 
 const colors = [
   Colors.blue,
@@ -34,12 +34,7 @@ class _LoginPageState extends State<LoginPage> {
         child: SafeArea(
           child: ListView(
             children: <Widget>[
-              GestureDetector(
-                onTap: () {
-                  _loginAsGuest();
-                },
-                child: NavigateNext(),
-              ),
+              TopNavigation(onTap: _loginAsGuest,),
               Container(
                 width: _data.size.width * 0.4,
                 height: _data.size.height * 0.3,
@@ -206,3 +201,6 @@ class _LoginPageState extends State<LoginPage> {
 
   Function _login() {}
 }
+
+
+

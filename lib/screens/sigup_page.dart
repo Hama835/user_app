@@ -1,5 +1,6 @@
 import 'package:app_user/components/custom_text_field.dart';
 import 'package:app_user/components/navigate_next.dart';
+import 'package:app_user/components/top_navigation.dart';
 import 'package:flutter/material.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -32,7 +33,7 @@ class _SignUpPageState extends State<SignUpPage> {
         ),
         child: ListView(
           children: <Widget>[
-            NavigateNext(),
+            TopNavigation(onTap: _loginAsGuest,),
             SizedBox(
               height: 20.0,
             ),
@@ -194,5 +195,5 @@ class _SignUpPageState extends State<SignUpPage> {
       ),
     );
   }
-
+void _loginAsGuest(){}
 }
