@@ -25,7 +25,7 @@ class NetworkingUtils {
 
   // Method returns the list of categories.
   static Future<List<Category>> getCategories() async {
-    List<Category> categories = new List<Category>();
+    List<Category> categories = List<Category>();
     var decodedJson = await _getJsonData(_CATEGORIES_URL);
     int count = decodedJson["count"];
     for (int i = 0; i < count; i++) {
@@ -44,7 +44,7 @@ class NetworkingUtils {
     String urlOfCurrentCategory =
         "https://eshukar.herokuapp.com/api/v1/categories/$categoryId/services";
     // List of services
-    List<ServiceCompany> services = new List<ServiceCompany>();
+    List<ServiceCompany> services = List<ServiceCompany>();
     var decodedJson = await _getJsonData(urlOfCurrentCategory);
     int count = decodedJson["count"];
     for (int i = 0; i < count; i++) {
@@ -56,7 +56,7 @@ class NetworkingUtils {
           decodedJson['data'][i]['availability'][0]['from'];
       String availabilityTo = decodedJson['data'][i]['availability'][0]['to'];
       print("$id $name");
-      services.add(new ServiceCompany(
+      services.add(ServiceCompany(
           id, name, info, availabilityFrom, availabilityTo, categoryName));
     }
     return services;
